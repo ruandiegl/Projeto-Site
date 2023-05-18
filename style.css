@@ -95,7 +95,7 @@ nav button:hover {
 }
 .header-block img {
    width: 50%;
-   height: 95%;
+   max-height: 95%;
    position: absolute;
    right: 2%;
    bottom: 2%;
@@ -104,7 +104,7 @@ nav button:hover {
   
 }
 .header-block h1, p {
-    width: 400px;
+    max-width: 40%;
     color: white;
     
 }
@@ -118,8 +118,95 @@ nav button:hover {
 .header-block p {
     text-align: center;
     font-family: ;
-    font-size: 1.8em;
+    font-size: min(22px, 4.5vw );
     font-weight: lighter;
-    text-align: justify;
+    text-align: start ;
     
 }
+/*catalog */
+
+section .catalogo {
+    width: 100vw;
+    padding: 100px;
+
+}
+section .filtro-festas {
+    width: 100%;
+    height: 150px;
+    background-color: #cfbff76c;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.search-input {
+    width: 700px;
+    height: 30px;
+    border: none;
+    border-radius: 9px 0px 0px 9px;
+    text-indent: 10px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.514);
+}
+.botao-pesquisa {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 0px 9px 9px 0px;
+    background-color: #4e4c67;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.514);
+    font-size: 1.1em;
+    transition: 0.3s ease;
+}
+.botao-pesquisa:hover{
+    background-color:  #cfbff76c;
+    color: #4e4c67;
+    box-shadow: none;
+    
+}
+.titulo-wrapper-catalogo {
+    margin-top: 200px;
+    padding-bottom: 20px;
+
+
+}
+section .card-wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px;
+    padding-top: 50px;
+}
+section .item-cartao{
+    height: 400px;
+    background-color: #cfb1b7b5;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+.conteudo-cartao {
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.item-cartao img {
+    width: 100%;
+
+}
+.item-cartao h3 {
+    width: 90%;
+}
+.item-cartao p {
+    width: 90%;
+    font-style: italic;
+    color: black;
+}
+
