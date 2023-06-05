@@ -209,6 +209,10 @@ section .item-cartao:hover {
     border-radius: 8px 8px 0px 0px;
 
 }
+.item-cartao > img {
+    width: 300px;
+    height: 240px;
+}
 .item-cartao h4 {
     width: 100%;
     text-align: center;
@@ -248,5 +252,26 @@ span.price {
     background-color: #CFB1B7;
     color: #4e4c67;
 }
+footer {
+    background-color: #4e4c67;
+    margin-top: 10px;
+}
+/* footer */
+footer p {
+    margin:auto;
+    
+    
+}
+footer a {
+    text-decoration: none;
+    color: white;
+
+}
+footer a:hover {
+    color: #CFB1B7;
+    text-decoration: underline;
+}
+
+
 
 
